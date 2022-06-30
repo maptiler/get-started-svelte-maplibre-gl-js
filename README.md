@@ -38,6 +38,7 @@ A simple fullscreen map application as an example on how to use MapTiler maps to
 * [Svelte](https://svelte.dev/)
 * [MapLibre GL JS](https://maplibre.org/)
 * [MapTiler](https://www.maptiler.com/)
+* [svelte-maps](https://github.com/ONSvisual/svelte-maps)
 
 ## Learn More
 
