@@ -1,15 +1,13 @@
-# Quickstart with Svelte and MapLibre GL JS
+# Get started with Svelte and MapLibre GL JS
 
 Quick way to star a web map application with MapLibre GL JS using Svelte.
 
 A simple fullscreen map application as an example on how to use MapTiler maps together with Svelte and MapLibre GL JS for your own Svelte app.
 
-## Getting Started
-
 1. Clone this repo 
  
   ```sh
-    git clone https://github.com/maptiler/quickstart-svelte-maplibre-gl-js.git my-svelte-map
+    git clone https://github.com/maptiler/get-started-svelte-maplibre-gl-js.git my-svelte-map
   ```
 
 2. Navigate to the newly created project folder **my-svelte-map**
