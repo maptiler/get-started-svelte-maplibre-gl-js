@@ -15,7 +15,7 @@
 
 <main>
 	<Map id="map" 
-		style="https://api.maptiler.com/maps/basic/style.json?key=YOUR_MAPTILER_API_KEY_HERE" 
+		style="https://api.maptiler.com/maps/streets/style.json?key=YOUR_MAPTILER_API_KEY_HERE" 
 		location={{lng: 16.62662018, lat: 49.2125578, zoom: 14}} 
 		bind:map={map} bind:zoom={zoom} bind:center={center} />
 </main>
