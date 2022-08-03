@@ -40,4 +40,4 @@ A simple fullscreen map application as an example on how to use MapTiler maps to
 
 ## Learn More
 
-You can learn more at [How to display a map in Svelte using MapLibre GL JS](https://documentation.maptiler.com/hc/en-us/articles/4416984762641-How-to-display-a-map-in-Svelte-using-MapLibre-GL-JS).
+You can learn more at [How to display a map in Svelte using MapLibre GL JS](https://docs.maptiler.com/svelte/maplibre-gl-js/how-to-use-maplibre-gl-js/).
