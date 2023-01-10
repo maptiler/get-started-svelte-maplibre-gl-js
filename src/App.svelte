@@ -1,29 +1,43 @@
 <script>
-	import { onMount } from "svelte";
-	import { Map }  from "@onsvisual/svelte-maps";
-	import maplibre from "maplibre-gl";
+  import { onMount } from "svelte";
+  import { Map } from "@onsvisual/svelte-maps";
+  import maplibre from "maplibre-gl";
+  import { Marker } from "maplibre-gl";
+  import Navbar from "./components/Navbar.svelte";
+  import SearchBar from "./components/SearchBar.svelte";
 
-	let map;
-	// State
-	let zoom;
-	let center = {};
+  let map;
+  // State
+  let zoom;
+  let center = {};
 
-	onMount(() => {
-		map.addControl(new maplibre.NavigationControl(), 'top-left');
-	})
+  onMount(() => {
+    new Marker({ color: "red" }).setLngLat([-75.49375, 39.05163]).addTo(map);
+    map.addControl(new maplibre.NavigationControl(), "top-left");
+    map.addControl(new maplibre.GeolocateControl(), "top-right");
+    map.addControl(new maplibre.FullscreenControl(), "top-right");
+    map.addControl(new maplibre.ScaleControl(), "bottom-right");
+    map.ScaleControl({ maxWidth: 80, unit: "imperial" });
+  });
 </script>
 
 <main>
-	<Map id="map" 
-		style="https://api.maptiler.com/maps/streets/style.json?key=YOUR_MAPTILER_API_KEY_HERE" 
-		location={{lng: 16.62662018, lat: 49.2125578, zoom: 14}} 
-		bind:map={map} bind:zoom={zoom} bind:center={center} />
+  <Navbar />
+  <SearchBar />
+  <Map
+    id="map"
+    style="https://api.maptiler.com/maps/streets/style.json?key=Z5oyxEHjNFqEUZE1KlEg"
+    location={{ lng: -75.49375, lat: 39.05163, zoom: 24 }}
+    bind:map
+    bind:zoom
+    bind:center
+  />
 </main>
 
 <style>
-	main {
-		width: 100%;
-		height: 100vh;
-		position: relative;
-	}
+  main {
+    width: 100%;
+    height: calc(100vh - 83px);
+    position: relative;
+  }
 </style>
