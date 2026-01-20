@@ -44,7 +44,7 @@ git clone https://github.com/maptiler/get-started-svelte-maplibre-gl-js.git my-s
 
 ## 🚀 Basic Usage
 
-1. Navigate to the newly created project folder **my-react-map**
+1. Navigate to the newly created project folder **my-svelte-map**
 
    ```shell
    cd my-svelte-map
